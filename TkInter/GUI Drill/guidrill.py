@@ -5,6 +5,7 @@ class ParentWindow(Frame):
     def __init__(self, master):
         Frame.__init__(self)
 
+
         # Centering the window
         windowWidth = 500
         windowHeight = 175
@@ -13,6 +14,7 @@ class ParentWindow(Frame):
         x = int((screenWidth/2) - (windowWidth/2))
         y = int((screenHeight/2) - (windowHeight/2))
 
+
         # Too lazy to type self.master
         ms = self.master
         ms = master
@@ -20,6 +22,7 @@ class ParentWindow(Frame):
         ms.title("Check Files")
         ms.config(bg="white")
         ms.resizable(width=False, height=False)
+
 
         # ========== Buttons ==========
         # ===== Browse =====
@@ -34,6 +37,7 @@ class ParentWindow(Frame):
         self.closeProgram = Button(self.master, text="Close Program", width=12, height=2)
         self.closeProgram.grid(row=2, column=1, pady=(5,5), padx=(10,15), sticky=NE)
 
+
         # ========== Text Boxes ==========
         self.textBox1_text = StringVar()
         self.textBox1 = Entry(self.master, text=self.textBox1_text, fg='black', width=60)
@@ -44,13 +48,9 @@ class ParentWindow(Frame):
 
 
 
-
-
-
-
-
 if __name__ == "__main__":
     # Instantiating Tkinter
     root = Tk()
     App = ParentWindow(root)
     root.mainloop()
+    
