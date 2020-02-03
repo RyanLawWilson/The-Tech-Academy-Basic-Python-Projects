@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import *
-
+import tkinter.messagebox # messagebox won't work unless it is imported explicitly
 import phonebook_func
 import phonebook_gui
 

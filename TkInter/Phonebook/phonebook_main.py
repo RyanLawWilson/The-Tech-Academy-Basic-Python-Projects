@@ -1,14 +1,14 @@
 
 import tkinter as tk
 from tkinter import *
-
+import tkinter.messagebox # messagebox won't work unless it is imported explicitly
 import phonebook_func
 import phonebook_gui
 
 # ParentWindow is a tkinter frame - alows us to use tkinter objects
-class ParentWindow(Frame)
-    def __init__ (self, master, **args, **kwargs)
-        Frame.__init__(self, master, **args, **kwargs)
+class ParentWindow(Frame):
+    def __init__(self, master, *args, **kwargs):
+        Frame.__init__(self, master, *args, **kwargs)
 
         self.master = master
         self.master.title("Tkinter Phonebook")
