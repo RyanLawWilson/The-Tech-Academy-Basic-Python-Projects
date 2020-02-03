@@ -43,7 +43,7 @@ class ParentWindow(Frame):
         self.textBox1 = Entry(self.master, text=self.textBox1_text, fg='black', width=60)
         self.textBox1.grid(row=0, column=1, padx=(5,10), pady=(50,5))
         self.textBox2_text = StringVar()
-        self.textBox2 = Entry(self.master, text=self.textBox1_text, fg='black', width=60)
+        self.textBox2 = Entry(self.master, text=self.textBox2_text, fg='black', width=60)
         self.textBox2.grid(row=1, column=1, padx=(5,10), pady=(5,5))
 
 
