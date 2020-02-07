@@ -114,6 +114,7 @@ class ParentWindow(Frame):
             # Show the 
             if numOfTxtFilesMoved > 0:
                 showDBFiles(self, movedFilesList)
+                movedFilesList.clear()
             
             # Prints text based on number of txt files in the folder.  Shows source and destination folders       
             if (numOfTxtFiles > 0):
@@ -122,8 +123,7 @@ class ParentWindow(Frame):
                 print("There are no .txt files in {}!".format(sourceDir))
         else:
             print("The source path and destination path must be valid!")
-        movedFilesList.clear()
-
+        
 
 # Create the Database table
 def createDBTables():
